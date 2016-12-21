@@ -6,7 +6,7 @@ Please let us know your [feedback](https://github.com/OfficeDev/office-js-docs/i
 
 ### Proposed method-1: worksheet.getBoundingRange 
 
-This method gets the smallest range object that encompasses the provided ranges. For example, the bounding range between `"B2:C5"` and `"D10:E15"` is `"B2:E16"`.
+This method gets the smallest range object that encompasses the provided ranges. For example, the bounding range between `"B2:C5"` and `"D10:E15"` is `"B2:E15"`.
 
 This function is a superset of the [getBoundingRect](https://github.com/OfficeDev/office-js-docs/blob/master/reference/excel/range.md#getboundingrectanotherrange-range-or-string) method on the Range object. That is, `worksheet.getBoundingRange([range1, range2])` is a identical to for `range1.getBoundingRect(range2)`. However, this version of the function is also able to accept more than two Range objects.
 
